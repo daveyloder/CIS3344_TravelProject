@@ -66,6 +66,7 @@ function openModal(destinationId) {
 
   const modal = document.getElementById("destinationModal");
   const modalContent = document.getElementById("modalContent");
+  const bookButton = document.getElementById("bookButton");
 
   // Create the content for the modal
   modalContent.innerHTML = `
@@ -98,6 +99,11 @@ function openModal(destinationId) {
 
   // Show the modal
   modal.style.display = "block";
+
+  // Remove existing event listeners by cloning and replacing the button
+  const newBookingButton = bookButton.cloneNode(true);
+
+  bookButton.parentNode.replaceChild(newBookingButton, bookButton);
 
   // Add book button event listener
   document.getElementById("bookButton").addEventListener("click", function () {

@@ -21,10 +21,10 @@
           <li class="nav-item">
             <a class="nav-link active" href="/">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a href="#destinations" class="nav-link">Destinations</a>
           </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         </ul>
       </div>
     </nav>
@@ -37,7 +37,6 @@
           Embark on an adventure of a lifetime with our unique jungle
           expeditions.
         </p>
-        <a href="destinations.html" class="btn">Explore Destinations</a>
       </div>
     </header>
 
@@ -72,6 +71,86 @@
         <span class="close-btn">&times;</span>
         <div id="modalContent">
           <!-- Destination details will load here -->
+        </div>
+        <div class="booking-form" id="bookingForm" style="display: none">
+          <h3>Book Your Adventure</h3>
+          <form id="tripBookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" class="required">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+                <div class="error" id="firstNameError">
+                  Please enter your first name
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastName" class="required">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+                <div class="error" id="lastNameError">
+                  Please enter your last name
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required />
+                <div class="error" id="emailError">
+                  Please enter a valid email
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="required">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+                <div class="error" id="phoneError">
+                  Please enter a valid phone number
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="travelDate" class="required"
+                  >Preferred Travel Date</label
+                >
+                <input type="date" id="travelDate" name="travelDate" required />
+                <div class="error" id="dateError">Please select a date</div>
+              </div>
+              <div class="form-group">
+                <label for="travelers" class="required"
+                  >Number of Travelers</label
+                >
+                <select id="travelers" name="travelers" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6+">6+</option>
+                </select>
+                <div class="error" id="travelersError">
+                  Please select the number of travelers
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="specialRequests">Special Requests</label>
+              <textarea id="specialRequests" name="specialRequests"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="accommodationType">Preferred Accommodation</label>
+              <select id="accommodationType" name="accommodationType">
+                <option value="">Select (Optional)</option>
+                <option value="standard">Standard</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <button id="bookButton" class="btn">Book Now</button>

@@ -130,10 +130,6 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-/* had issues with buttons not being spaced, made this edit to fix  */
-.button-container > .btn {
-  margin-right: 10px;
-}
 
 .btn:hover {
   background-color: var(--earthy-brown);
@@ -144,36 +140,6 @@ body {
 .btn-small {
   padding: 8px 15px;
   font-size: 0.9rem;
-}
-
-/* Search Section */
-.search-section {
-  background-color: var(--verdant-green);
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#searchInput {
-  padding: 10px;
-  width: 50%;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  flex: 1;
-  font-size: 16px;
-}
-
-#searchButton {
-  border-radius: 0 4px 4px 0;
-  font-size: 16px;
 }
 
 /* Destinations Section */
@@ -194,6 +160,7 @@ body {
   margin-top: 30px;
 }
 
+/* Destination Card Styles */
 .destination-card {
   background-color: white;
   border-radius: 8px;
@@ -207,196 +174,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-image {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 1.5rem;
-}
-
-.card-content h3 {
-  color: var(--tropical-teal);
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  margin-bottom: 1rem;
-  color: var(--deep-jungle-green);
-}
-
-/* About Section */
-.about-section {
-  background-color: var(--river-blue);
-  color: white;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.about-section h2 {
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--deep-jungle-green);
-  color: var(--warm-beige);
-  text-align: center;
-  padding: 2rem 0;
-}
-
-/* Destination Details Page */
-.destination-details {
-  padding: 6rem 0 4rem;
-}
-
-.details-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.destination-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.destination-info h1 {
-  color: var(--tropical-teal);
-  margin-bottom: 1rem;
-}
-
-.destination-description {
-  margin-bottom: 2rem;
-}
-
-.itinerary {
-  margin-bottom: 2rem;
-}
-
-.itinerary h3 {
-  color: var(--vintage-red);
-  margin-bottom: 1rem;
-}
-
-.itinerary ul {
-  list-style-position: inside;
-  margin-left: 1rem;
-}
-
-.itinerary li {
-  margin-bottom: 0.5rem;
-}
-
-.map-container {
-  height: 300px;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Booking Form */
-.booking-form {
-  background-color: var(--warm-beige);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.booking-form h3 {
-  color: var(--deep-jungle-green);
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--deep-jungle-green);
-  font-weight: bold;
-}
-
-.form-control {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--tropical-teal);
-}
-
-.form-error {
-  color: var(--vintage-red);
-  font-size: 0.8rem;
-  margin-top: 0.3rem;
-}
-
-/* NEW DESTINATIONS PAGE SPECIFIC STYLES */
-
-/* Destinations Header */
-.destinations-header {
-  background-color: var(--deep-jungle-green);
-  color: white;
-  padding: 60px 0 40px;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.destinations-header h1 {
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-  color: var(--golden-sunlight);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.destinations-header p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: var(--warm-beige);
-}
-
-/* Filter Container */
-.filter-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  background-color: var(--light-beige);
-  border: 1px solid var(--warm-beige);
-  padding: 8px 15px;
-  margin: 0 5px 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all 0.3s;
-  color: var(--deep-jungle-green);
-}
-
-.filter-btn:hover {
-  background-color: var(--warm-beige);
-}
-
-.filter-btn.active {
-  background-color: var(--vintage-red);
-  color: var(--warm-beige);
-  border-color: var(--vintage-red);
-  font-weight: bold;
-}
-
-/* Destination Card - specific styles */
 .destination-image {
   height: 200px;
   overflow: hidden;
@@ -421,12 +198,6 @@ body {
   color: var(--tropical-teal);
   margin-bottom: 10px;
   font-size: 1.4rem;
-}
-
-.location {
-  color: var(--vintage-red);
-  font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .description {
@@ -455,6 +226,26 @@ body {
   padding: 30px;
   font-size: 1.2rem;
   color: var(--deep-jungle-green);
+}
+
+/* About Section */
+.about-section {
+  background-color: var(--river-blue);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--deep-jungle-green);
+  color: var(--warm-beige);
+  text-align: center;
+  padding: 2rem 0;
 }
 
 /* Modal Styles */
@@ -573,12 +364,68 @@ body {
   background-color: var(--earthy-brown);
 }
 
+/* Booking Form Styles */
+.booking-form {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--light-beige);
+}
+
+.booking-form h3 {
+  color: var(--tropical-teal);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--deep-jungle-green);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: "Arial", sans-serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-group .error {
+  color: var(--vintage-red);
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: none;
+}
+
+.required::after {
+  content: " *";
+  color: var(--vintage-red);
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 992px) {
-  .details-container {
-    grid-template-columns: 1fr;
-  }
-
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -607,27 +454,6 @@ body {
     font-size: 2rem;
   }
 
-  .destinations-header {
-    padding: 40px 20px 30px;
-    margin-top: 100px;
-  }
-
-  .search-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #searchInput {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-  }
-
-  #searchButton {
-    width: 100%;
-    border-radius: 4px;
-  }
-
   .destinations-grid {
     grid-template-columns: 1fr;
   }
@@ -640,6 +466,11 @@ body {
   .modal-image {
     height: 220px;
   }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -647,23 +478,12 @@ body {
     height: 50vh;
   }
 
-  .hero h1,
-  .destinations-header h1 {
+  .hero h1 {
     font-size: 1.8rem;
   }
 
   .container {
     padding: 1.5rem;
-  }
-
-  .filter-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .filter-btn {
-    width: 80%;
-    margin-bottom: 5px;
   }
 
   .modal-content {
