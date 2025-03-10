@@ -180,7 +180,7 @@ To install these dependencies, run (like we did above):
 npm install
 ```
 
-## Avalible Acripts
+## Avalible Scripts
 
 The following scripts are availible to use in the `package.json` file:
 
@@ -195,4 +195,4 @@ The following scripts are availible to use in the `package.json` file:
 
 ## License
 
-Thought I should put this here just in case but this project is licensed under the ISC License
+Thought I should put this here just in case but this project is licensed under the ISC License and is free to use by anyone and everyone.
