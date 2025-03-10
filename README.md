@@ -64,6 +64,8 @@ The site includes a search bar that allows users to filter destinations by name 
 - The search is case-insensitive and matches partial strings in both the destination name and description.
 - If no destinations match the search, a "No destinations found" message is displayed.
 
+![Search Function](./img/searchfunction.gif)
+
 ### Booking Form
 
 The booking form is accessible by clicking the "View Details" button on a destination card and then selecting "Book Now." Here's how it works:
@@ -80,7 +82,9 @@ The booking form is accessible by clicking the "View Details" button on a destin
    When the form is submitted:
    - The form data is logged to the console using `console.log`.
    - A confirmation alert is shown to the user with their name and the destination they booked.
-   - The modal closes automatically after submission.
+   - The modal closes automatically after submission
+
+![Booking Feature](./img/bookingfeature.gif)
 
 ---
 
