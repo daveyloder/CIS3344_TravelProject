@@ -66,6 +66,7 @@ function openModal(destinationId) {
 
   const modal = document.getElementById("destinationModal");
   const modalContent = document.getElementById("modalContent");
+  const bookingForm = document.getElementById("bookingForm");
   const bookButton = document.getElementById("bookButton");
 
   // Create the content for the modal
@@ -97,8 +98,18 @@ function openModal(destinationId) {
     </div>
   `;
 
+  // Reset and hide booking form
+  if (bookingForm) {
+    document.getElementById("tripBookingForm").reset();
+    bookingForm.style.display = "none";
+  }
+
   // Show the modal
   modal.style.display = "block";
+
+  // Change book button text to "Book Now"
+
+  bookButton.textContent = "Book Now";
 
   // Remove existing event listeners by cloning and replacing the button
   const newBookingButton = bookButton.cloneNode(true);
@@ -107,9 +118,20 @@ function openModal(destinationId) {
 
   // Add book button event listener
   document.getElementById("bookButton").addEventListener("click", function () {
-    console.log("Booked!");
-    alert(`Thank you for booking ${destination.name}!`);
-    modal.style.display = "none";
+    const form = document.getElementById("bookingForm");
+
+    if (form.style.display === "none") {
+      // First click - show the form
+      form.style.display = "block";
+      this.textContent = "Submit Booking";
+
+      // Scroll to the form
+      form.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      if (validateBookingForm()) {
+        submitBookingForm(destination.name);
+      }
+    }
   });
 
   // Close modal when clicking the X
@@ -123,6 +145,70 @@ function openModal(destinationId) {
       modal.style.display = "none";
     }
   });
+}
+
+function validateBookingForm() {
+  let isValid = true;
+
+  const requireFields = [
+    { id: "firstName", errorId: "firstNameError" },
+    { id: "lastName", errorId: "lastNameError" },
+    { id: "email", errorId: "emailError" },
+    { id: "phone", errorId: "phoneError" },
+    { id: "travelDate", errorId: "dateError" },
+    { id: "travelers", errorId: "travelersError" },
+  ];
+
+  // Reset all error messages
+  document.querySelectorAll(".error").forEach((error) => {
+    error.style.display = "none";
+  });
+
+  requireFields.forEach((field) => {
+    const input = document.getElementById(field.id);
+    const error = document.getElementById(field.errorId);
+
+    if (!input.value.trim()) {
+      isValid = false;
+      error.style.display = "block";
+    }
+    // Additional validation for email
+    if (field.id === "email" && input.value.trim()) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(input.value.trim())) {
+        isValid = false;
+        error.style.display = "block";
+      }
+    }
+  });
+
+  return isValid;
+}
+
+// Submit the booking form and data
+function submitBookingForm(destinationName) {
+  const form = document.getElementById("tripBookingForm");
+  const formData = new FormData(form);
+  const bookingData = {};
+
+  // Convert FormData to object
+  for (let [key, value] of formData.entries()) {
+    bookingData[key] = value;
+  }
+
+  // Add destination name to booking data
+  bookingData.destination = destinationName;
+
+  // Log the booking data (replace with your actual submission code)
+  console.log("Booking submitted:", bookingData);
+
+  // Show success message
+  alert(
+    `Thank you ${bookingData.firstName}! Your booking for ${destinationName} has been submitted. We'll contact you shortly to confirm your reservation.`
+  );
+
+  // Close the modal
+  document.getElementById("destinationModal").style.display = "none";
 }
 
 // Initial display of all destinations
