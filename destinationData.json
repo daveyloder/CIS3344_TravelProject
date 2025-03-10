@@ -4,7 +4,6 @@
     "name": "The Backside of Waterfall",
     "image": "img/backside_waterfall.jpg",
     "description": "The 8th wonder of the world!",
-    "region": "jungle",
     "price": "$1200",
     "details": {
       "long_description": "Prepare to be amazed by the most breathtaking view you’ve never seen—the backside of water! This legendary waterfall is a must-see for adventurers and pun enthusiasts alike.",
@@ -24,7 +23,6 @@
     "name": "Schweitzer Falls",
     "image": "img/schweitzer_falls.jpg",
     "description": "Named after the famous Dr. Albert Falls.",
-    "region": "jungle",
     "price": "$1950",
     "details": {
       "long_description": "Rumor has it that Schweitzer Falls was named after the legendary Dr. Albert Falls, though no one can confirm. This towering waterfall is a sight to behold—just don’t ask why it’s named after a person who may or may not exist.",
@@ -44,7 +42,6 @@
     "name": "The Temple of the Forbidden Eye",
     "image": "img/forbidden_temple.jpg",
     "description": "Enter if you dare!",
-    "region": "jungle",
     "price": "$2145",
     "details": {
       "long_description": "Deep in the jungle lies an ancient temple shrouded in mystery—and bad luck. Legend says anyone who enters will be cursed, but don’t worry, your skipper knows a guy who knows a guy who can lift curses (probably).",
@@ -64,7 +61,6 @@
     "name": "The Boiling River",
     "image": "img/boiling_river.jpg",
     "description": "Hotter than a skipper’s jokes!",
-    "region": "jungle",
     "price": "$750",
     "details": {
       "long_description": "This river isn’t just warm—it’s boiling! Legend says it’s heated by an underground volcano, but your skipper insists it’s just the jungle’s way of making tea. Either way, don’t fall in!",
@@ -84,7 +80,6 @@
     "name": "Trader Sam’s Lost and Found",
     "image": "img/trader_sam.jpg",
     "description": "Where everything has a price—and a pun.",
-    "region": "jungle",
     "price": "$500",
     "details": {
       "long_description": "Trader Sam’s is the jungle’s most famous (and only) trading post. Here, you can trade your spare headshrinker for a two-headed monkey—or just enjoy a refreshing drink and some of Sam’s legendary puns.",

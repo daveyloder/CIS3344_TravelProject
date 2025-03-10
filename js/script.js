@@ -10,15 +10,17 @@ async function loadDestinationData() {
       ...destination,
     }));
     displayDestinations(allDestinations);
+    return Promise.resolve(); // Return a resolved promise.
   } catch (error) {
     console.log(`Error loading destination data: ${error}.`);
+    return Promise.reject(error);
   }
 }
 
 // Function to create destination cards
 function createDestinationCard(destination) {
   return `
-      <div class="destination-card" data-region="${destination.region}">
+      <div class="destination-card"">
         <div class="destination-image">
           <img src="${destination.image}" alt="${destination.name}">
         </div>
@@ -77,7 +79,6 @@ function openModal(destinationId) {
     </div>
     <div class="modal-details">
       <p class="price-large">Price: ${destination.price}</p>
-      <p class="region">Region: ${destination.region}</p>
       <div class="long-description">
         <h3>About this Destination</h3>
         <p>${destination.details.long_description}</p>
@@ -146,7 +147,7 @@ function openModal(destinationId) {
     }
   });
 }
-
+// Function to validate user input to the form
 function validateBookingForm() {
   let isValid = true;
 
@@ -211,9 +212,31 @@ function submitBookingForm(destinationName) {
   document.getElementById("destinationModal").style.display = "none";
 }
 
+function searchDestinations() {
+  const searchInput = document
+    .getElementById("destinationSearch")
+    .value.toLowerCase();
+
+  const filteredDestinations = allDestinations.filter((destination) => {
+    // Check if destination name or description contains the search input
+    const nameMatch = destination.name.toLowerCase().includes(searchInput);
+    const descriptionMatch = destination.description
+      .toLowerCase()
+      .includes(searchInput);
+
+    return nameMatch || descriptionMatch;
+  });
+
+  displayDestinations(filteredDestinations);
+}
+
 // Initial display of all destinations
 document.addEventListener("DOMContentLoaded", () => {
-  loadDestinationData();
+  loadDestinationData().then(() => {
+    document
+      .getElementById("destinationSearch")
+      .addEventListener("input", searchDestinations);
+  });
 
   // Close modal when ESC key is pressed
   document.addEventListener("keydown", function (event) {
