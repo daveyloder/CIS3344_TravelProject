@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "The Backside of Waterfall",
+    "image": "img/backside_waterfall.jpg",
+    "description": "The 8th wonder of the world!",
+    "region": "jungle",
+    "price": "$1200",
+    "details": {
+      "long_description": "Prepare to be amazed by the most breathtaking view you’ve never seen—the backside of water! This legendary waterfall is a must-see for adventurers and pun enthusiasts alike.",
+      "itinerary": [
+        "Day 1: Board your trusty boat and meet your skipper, who’s full of jokes (and questionable navigation skills).",
+        "Day 2: Cruise down the river and dodge mischievous monkeys stealing your snacks.",
+        "Day 3: Witness the majestic Backside of Waterfall and try not to get soaked by its 'refreshing' mist."
+      ],
+      "location": {
+        "latitude": -3.4653,
+        "longitude": -62.2159
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "Schweitzer Falls",
+    "image": "img/schweitzer_falls.jpg",
+    "description": "Named after the famous Dr. Albert Falls.",
+    "region": "jungle",
+    "price": "$1950",
+    "details": {
+      "long_description": "Rumor has it that Schweitzer Falls was named after the legendary Dr. Albert Falls, though no one can confirm. This towering waterfall is a sight to behold—just don’t ask why it’s named after a person who may or may not exist.",
+      "itinerary": [
+        "Day 1: Arrive at the Jungle Navigation Company and meet your skipper.",
+        "Day 2: Navigate through treacherous rapids while your skipper tells you 'hilarious' jokes.",
+        "Day 3: Marvel at Schweitzer Falls and learn the 'true' story behind its name."
+      ],
+      "location": {
+        "latitude": -0.228,
+        "longitude": 15.8277
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "The Temple of the Forbidden Eye",
+    "image": "img/forbidden_temple.jpg",
+    "description": "Enter if you dare!",
+    "region": "jungle",
+    "details": {
+      "long_description": "Deep in the jungle lies an ancient temple shrouded in mystery—and bad luck. Legend says anyone who enters will be cursed, but don’t worry, your skipper knows a guy who knows a guy who can lift curses (probably).",
+      "itinerary": [
+        "Day 1: Arrive at the temple gates and listen to your skipper’s warnings (or ignore them).",
+        "Day 2: Explore the temple and try not to trigger any ancient traps.",
+        "Day 3: Escape the curse (or not) and enjoy a celebratory jungle feast."
+      ],
+      "location": {
+        "latitude": 4.2105,
+        "longitude": 101.9758
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Boiling River",
+    "image": "img/boiling_river.jpg",
+    "description": "Hotter than a skipper’s jokes!",
+    "details": {
+      "long_description": "This river isn’t just warm—it’s boiling! Legend says it’s heated by an underground volcano, but your skipper insists it’s just the jungle’s way of making tea. Either way, don’t fall in!",
+      "itinerary": [
+        "Day 1: Arrive at the riverbank and meet your skipper, who’s already testing the water temperature with their toe.",
+        "Day 2: Cruise along the river and spot steam vents bubbling up like nature’s hot tub.",
+        "Day 3: Enjoy a picnic on the shore (but keep your distance from the water)."
+      ],
+      "location": {
+        "latitude": -3.7492,
+        "longitude": -73.2536
+      }
+    }
+  },
+  {
+    "id": 5,
+    "name": "Trader Sam’s Lost and Found",
+    "image": "img/trader_sam.jpg",
+    "description": "Where everything has a price—and a pun.",
+    "details": {
+      "long_description": "Trader Sam’s is the jungle’s most famous (and only) trading post. Here, you can trade your spare headshrinker for a two-headed monkey—or just enjoy a refreshing drink and some of Sam’s legendary puns.",
+      "itinerary": [
+        "Day 1: Arrive at Trader Sam’s and browse his collection of 'rare' artifacts.",
+        "Day 2: Haggle with Sam over the price of a shrunken head (spoiler: you’ll lose).",
+        "Day 3: Enjoy a jungle-themed cocktail and listen to Sam’s endless supply of jokes."
+      ],
+      "location": {
+        "latitude": -18.7669,
+        "longitude": 46.8691
+      }
+    }
+  }
+]

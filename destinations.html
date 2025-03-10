@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+    />
+    <title>Destination - Kut-Korner Vacations</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <h2>Kut-Korner</h2>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Destinations Header  -->
+    <header class="destinations-header">
+      <div class="container">
+        <h1>Our Exotic Destinations</h1>
+        <p>Find your perfect jungle adventure</p>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search deestinations... is there a typo?"
+          />
+          <button id="searchButton" class="btn">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section">
+      <div class="container">
+        <div class="filter-container">
+          <!-- Want to add filter buttons but waiting on what I want to add here -->
+        </div>
+        <div class="destinations-grid" id="destinationsGrid">
+          <!-- Destinations will load here  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Kut-Korner Vacations. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/destinations.js"></script>
+  </body>
+</html>
