@@ -211,7 +211,7 @@ function submitBookingForm(destinationName) {
   // Close the modal
   document.getElementById("destinationModal").style.display = "none";
 }
-
+// Search function that actively filters search input to destination card
 function searchDestinations() {
   const searchInput = document
     .getElementById("destinationSearch")
