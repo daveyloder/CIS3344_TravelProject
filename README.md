@@ -92,7 +92,7 @@ The booking form is accessible by clicking the "View Details" button on a destin
 
 This project is structured as this:
 
-- #### HTML (`index.html`)
+- #### HTML (`index.html`):
 
   The main page of the site which includes:
 
@@ -108,7 +108,7 @@ This project is structured as this:
 
   - And a footer because sure why not.
 
-- #### CSS (`css/styles.css`)s:
+- #### CSS (`css/styles.css`):
 
   Styles for the entire page which include:
 
@@ -118,7 +118,7 @@ This project is structured as this:
 
   - Animations and hover effects like how the cards and buttons lift slightly to give more life to the design
 
-- #### JavaScript
+- #### JavaScript (`js/scripts.js`):
 
   Handles all the interactive parts of the site like:
 
