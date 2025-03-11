@@ -218,7 +218,7 @@ function searchDestinations() {
     .value.toLowerCase();
 
   const filteredDestinations = allDestinations.filter((destination) => {
-    // Check if destination name or description contains the search input
+    // Check if destination name, description, or price contains the search input
     const nameMatch = destination.name.toLowerCase().includes(searchInput);
     const descriptionMatch = destination.description
       .toLowerCase()
