@@ -223,8 +223,9 @@ function searchDestinations() {
     const descriptionMatch = destination.description
       .toLowerCase()
       .includes(searchInput);
+    const priceMatch = destination.price.toLowerCase().includes(searchInput);
 
-    return nameMatch || descriptionMatch;
+    return nameMatch || descriptionMatch || priceMatch;
   });
 
   displayDestinations(filteredDestinations);
