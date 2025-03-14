@@ -96,6 +96,7 @@ function openModal(destinationId) {
         <p>Latitude: ${destination.details.location.latitude}</p>
         <p>Longitude: ${destination.details.location.longitude}</p>
       </div>
+      <div id="map" style="height: 300px; width: 100%;"></div>
     </div>
   `;
 
@@ -107,6 +108,30 @@ function openModal(destinationId) {
 
   // Show the modal
   modal.style.display = "block";
+
+  // Initialize the map
+  setTimeout(() => {
+    const map = L.map("map").setView(
+      [
+        destination.details.location.latitude,
+        destination.details.location.longitude,
+      ],
+      13
+    );
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    L.marker([
+      destination.details.location.latitude,
+      destination.details.location.longitude,
+    ])
+      // Adds location to the map with a pin and keeps the pin open when opening the modal
+      .addTo(map)
+      .bindPopup(`<b>${destination.name}</b><br>${destination.description}`)
+      .openPopup();
+  }, 300); // Added a delay to ensure modal is visable
 
   // Change book button text to "Book Now"
 
